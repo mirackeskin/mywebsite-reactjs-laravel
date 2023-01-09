@@ -1,0 +1,144 @@
+.mainWrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.leftBox{
+    width: 20%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.imageBox{
+    width:70% ;
+    border-radius: 70%;
+    border: 2px solid white;
+}
+.imageBox img{
+    width: 100%;
+    height: 100%;
+    border-radius: 70%;
+}
+.rightBox{
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 20px;
+    
+}
+
+.textContainers{
+    display: flex;
+    flex-direction: column;
+}
+.nameText{
+    font-size: 70px;
+    font-weight: bold;
+    color: #343A40;
+    margin-bottom: 5px;
+}
+.jobText{
+    font-size: 40px;
+    color: #343A40;
+    margin-bottom: 5px;
+}
+.aboutText{
+    font-size: 20px;
+    color: #343A40;
+    margin-bottom: 5px;
+}
+
+.iconContainers{
+    display: flex;
+}
+.icon{
+    width: 40px;
+    height: 40px;
+}
+a{
+    color: #343A40;
+}
+a:hover{
+    color: black;
+}
+
+/*Phone CSS Codes*/
+@media screen and (max-width: 600px) {
+
+    .mainWrapper{
+        flex-direction: column;
+    }
+    .leftBox{
+        width: 100%;
+        height: 50%;
+    }
+    .imageBox{
+        width: 50%;
+        border-radius: 70%;
+        border: 2px solid white;
+    }
+    .rightBox{
+        width: 100%;
+        height: 50%;
+        justify-content: flex-start;
+        background-color: black;
+        padding-left: 0px;
+    }
+    .textContainers{
+        width: 100%;
+    }
+    .nameText{
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    .jobText{
+        font-size: 20px;
+        color: white;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    .aboutText{
+        font-size: 16px;
+        color: white;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    .iconContainers{
+        width: 100%;
+        justify-content: center;
+    }
+    .icon{
+        width: 30px;
+        height: 30px;
+    }
+    a{
+        color: white;
+    }
+    a:hover{
+        color: gray;
+    }
+    @media (orientation: landscape) {
+        .imageBox{
+            width: 100px;
+            height: 100px;
+            border-radius: 70%;
+            border: 2px solid white;
+        }
+    }
+    
+}
+
+
+
+
+  
