@@ -12,7 +12,7 @@ import Create from "../pages/dashboard/create/Create"
 import Cover from "../pages/dashboard/cover/Cover"
 import Members from "../pages/dashboard/members/Members"
 import UserSettings from "../pages/dashboard/usersettings/UserSettings"
-import DashboardHome from "../pages/dashboard/usersettings/UserSettings"
+import DashboardHome from "../pages/dashboard/home/DashboardHome"
 import Edit from '../pages/dashboard/posts/edit/Edit';
 
 
@@ -29,7 +29,7 @@ const Navigations = () => {
           <Route path="register" element={<Register></Register>}></Route>
         </Route>
         <Route path="/dashboard" element={<DashboardLayout></DashboardLayout>}>
-          <Route path="home" element={<DashboardHome></DashboardHome>}></Route>
+          <Route path="/dashboard" element={<DashboardHome></DashboardHome>}></Route>
           <Route path="posts" element={<Posts></Posts>}></Route>
           <Route path="create" element={<Create></Create>}></Route>
           <Route path="cover" element={<Cover></Cover>}></Route>

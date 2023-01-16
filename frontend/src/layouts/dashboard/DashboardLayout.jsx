@@ -21,7 +21,7 @@ const DashboardLayout = () => {
       <div className={styles.body}>
         <div className={styles.sideBar}>
           <ul>
-            <Link className={styles.link} to="home"><li className={styles.li}><FaHome className={styles.icon}></FaHome><span className={styles.span}>Home</span></li></Link>
+            <Link className={styles.link} to="/dashboard"><li className={styles.li}><FaHome className={styles.icon}></FaHome><span className={styles.span}>Home</span></li></Link>
             <Link className={styles.link} to="posts"><li className={styles.li}><FaListAlt className={styles.icon}></FaListAlt><span className={styles.span}>Posts</span></li></Link>
             <Link className={styles.link} to="create"><li className={styles.li}><FaPlusSquare className={styles.icon}></FaPlusSquare><span className={styles.span}>Create Post</span></li></Link>
             <Link className={styles.link} to="cover"><li className={styles.li}><FaIdCard className={styles.icon}></FaIdCard><span className={styles.span}>Cover Page</span></li></Link>

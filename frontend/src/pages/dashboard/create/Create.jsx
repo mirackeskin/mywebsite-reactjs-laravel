@@ -3,12 +3,14 @@ import styles from './Create.module.css'
 import axios from 'axios'
 import { useState } from 'react'
 import { API_URL } from '../../../client'
+import {Navigate, useNavigate} from 'react-router-dom'
 
 const Create = () => {
   const [file,setFile]=useState(null);
   const [title,setTitle]=useState("");
   const [coverText,setCoverText]=useState("");
   const [content,setContent]=useState("");
+  const Navigation=useNavigate();
 
   const handleSubmit=(e)=>{
     e.preventDefault();
@@ -21,7 +23,7 @@ const Create = () => {
       headers:{"content-type":"multipart/form-data"}
     }
     axios.post(`${API_URL}/create`,formData,config)
-    .then(response=>{setTitle("");setCoverText("");setContent("");setFile(null)})
+    .then(response=>{Navigation("/dashboard/posts")})
     .catch((err)=>alert(err))
   }
 
@@ -49,7 +51,7 @@ const Create = () => {
               <label className="form-label text-light">Post Image</label>
               <input className="form-control" type="file" onChange={(e)=>setFile(e.target.files[0])} name="file" />
             </div>
-            <button type="submit" className="btn btn-primary">Submit</button>
+            <button type="submit" className="btn btn-outline-light btn-sm">Create</button>
           </form>
         </div>
       </div>
