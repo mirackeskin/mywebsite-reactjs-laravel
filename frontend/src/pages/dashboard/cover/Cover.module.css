@@ -1,0 +1,26 @@
+.mainWrapper{
+    background-color: transparent;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.formBox1,.formBox2{
+    width: 50%;
+}
+
+@media screen and (max-width:768px){
+    .formBox1,.formBox2{
+        width: 100%;
+    }
+     .form{
+        display: flex;
+        flex-direction: column;
+    }
+}
