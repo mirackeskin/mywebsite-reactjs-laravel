@@ -31,7 +31,7 @@ const Posts = () => {
         <div className={styles.mainWrapper}>
             <div className='card bg-dark'>
                 <div className='card-header'>
-                    <h1 className='text-light'>Post Lists Table</h1>
+                    <h1 className='text-light'>Posts Table</h1>
                 </div>
                 <div className='card-body'>
                     <div className="table-responsive-md">
@@ -54,8 +54,8 @@ const Posts = () => {
                                             <td>{post.created_at}</td>
                                             <td><img style={{ width: "40px", height: "40px" }} src={`${IMAGE_URL}/${post.post_image}`} alt="" /></td>
                                             <td>
-                                                <Link to={`/dashboard/edit/${post.id}`} className='btn btn-warning btn-sm me-1'>Edit</Link>
-                                                <button onClick={()=>handleDelete(post.id)} className='btn btn-danger btn-sm'>Delete</button>
+                                                <Link to={`/dashboard/edit/${post.id}`} className='btn btn-light btn-sm me-1'>Edit</Link>
+                                                <button onClick={()=>handleDelete(post.id)} className='btn btn-outline-light btn-sm'>Delete</button>
                                             </td>
                                         </tr>
                                     ))

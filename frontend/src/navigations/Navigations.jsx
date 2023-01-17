@@ -14,6 +14,7 @@ import Members from "../pages/dashboard/members/Members"
 import UserSettings from "../pages/dashboard/usersettings/UserSettings"
 import DashboardHome from "../pages/dashboard/home/DashboardHome"
 import Edit from '../pages/dashboard/posts/edit/Edit';
+import Saw from '../pages/dashboard/saw/Saw';
 
 
 
@@ -35,6 +36,7 @@ const Navigations = () => {
           <Route path="cover" element={<Cover></Cover>}></Route>
           <Route path="members" element={<Members></Members>}></Route>
           <Route path="usersettings" element={<UserSettings></UserSettings>}></Route>
+          <Route path="saw" element={<Saw></Saw>}></Route>
           
           <Route path='edit/:id' element={<Edit></Edit>}></Route>
         </Route>

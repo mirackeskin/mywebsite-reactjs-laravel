@@ -2,7 +2,7 @@ import React from 'react'
 import { Outlet, useNavigate } from 'react-router-dom'
 import styles from './DashboardLayout.module.css'
 import {Link} from 'react-router-dom'
-import {FaHome,FaListAlt,FaPlusSquare,FaUsers,FaUser,FaIdCard} from 'react-icons/fa';
+import {FaHome,FaListAlt,FaPlusSquare,FaUsers,FaUser,FaIdCard,FaPenNib} from 'react-icons/fa';
 
 const DashboardLayout = () => {
   const navigate=useNavigate();
@@ -27,6 +27,7 @@ const DashboardLayout = () => {
             <Link className={styles.link} to="cover"><li className={styles.li}><FaIdCard className={styles.icon}></FaIdCard><span className={styles.span}>Cover Page</span></li></Link>
             <Link className={styles.link} to="members"><li className={styles.li}><FaUsers className={styles.icon}></FaUsers><span className={styles.span}>Members</span></li></Link>
             <Link className={styles.link} to="usersettings"><li className={styles.li}><FaUser className={styles.icon}></FaUser><span className={styles.span}>User Settings</span></li></Link>
+            <Link className={styles.link} to="saw"><li className={styles.li}><FaPenNib className={styles.icon}></FaPenNib><span className={styles.span}>Word of the Day</span></li></Link>
           </ul>
         </div>
         <div className={styles.dashboardContainer}>

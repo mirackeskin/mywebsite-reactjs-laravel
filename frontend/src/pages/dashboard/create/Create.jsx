@@ -37,19 +37,19 @@ const Create = () => {
           <form onSubmit={handleSubmit} encType='multipart/form-data'>
             <div className="mb-3">
               <label className="form-label text-light">Post Title</label>
-              <input type="text" onChange={(e)=>setTitle(e.target.value)} value={title} className="form-control"></input>
+              <input type="text" onChange={(e)=>setTitle(e.target.value)} value={title} className="form-control" required></input>
             </div>
             <div className="mb-3">
               <label className="form-label text-light">Post Cover Text</label>
-              <textarea className="form-control" onChange={(e)=>setCoverText(e.target.value)} value={coverText} rows="3"></textarea>
+              <textarea className="form-control" onChange={(e)=>setCoverText(e.target.value)} value={coverText} rows="3" required></textarea>
             </div>
             <div className="mb-3">
               <label className="form-label text-light">Post Content</label>
-              <textarea className="form-control" onChange={(e)=>setContent(e.target.value)} value={content} rows="7"></textarea>
+              <textarea className="form-control" onChange={(e)=>setContent(e.target.value)} value={content} rows="7" required></textarea>
             </div>
             <div className="mb-3">
               <label className="form-label text-light">Post Image</label>
-              <input className="form-control" type="file" onChange={(e)=>setFile(e.target.files[0])} name="file" />
+              <input className="form-control" type="file" onChange={(e)=>setFile(e.target.files[0])} name="file" required/>
             </div>
             <button type="submit" className="btn btn-outline-light btn-sm">Create</button>
           </form>

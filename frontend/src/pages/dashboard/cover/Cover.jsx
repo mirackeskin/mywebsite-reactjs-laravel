@@ -65,44 +65,44 @@ const Cover = () => {
             <div className={styles.formBox2}>
               <div className="mb-3">
                 <label className="form-label text-light">Linkedin Url</label>
-                <input type="text" onChange={e=>setLinkedinUrl(e.target.value)} value={linkedinUrl} className="form-control"></input>
+                <input type="text" onChange={e=>setLinkedinUrl(e.target.value)} value={linkedinUrl} className="form-control" required></input>
               </div>
               <div className="mb-3">
                 <label className="form-label text-light">GitHub Url</label>
-                <input type="text" onChange={e=>setGithubUrl(e.target.value)} value={githubUrl} className="form-control"></input>
+                <input type="text" onChange={e=>setGithubUrl(e.target.value)} value={githubUrl} className="form-control" required></input>
               </div>
               <div className="mb-3">
                 <label className="form-label text-light">Twitter Url</label>
-                <input type="text" onChange={e=>setTwitterUrl(e.target.value)} value={twitterUrl} className="form-control"></input>
+                <input type="text" onChange={e=>setTwitterUrl(e.target.value)} value={twitterUrl} className="form-control" required></input>
               </div>
               <div className="mb-3">
                 <label className="form-label text-light">Instagram Url</label>
-                <input type="text" onChange={e=>setInstagramUrl(e.target.value)} value={instagramUrl} className="form-control"></input>
+                <input type="text" onChange={e=>setInstagramUrl(e.target.value)} value={instagramUrl} className="form-control" required></input>
               </div>
               <div className="mb-3">
                 <label className="form-label text-light">GooglePlay Url</label>
-                <input type="text" onChange={e=>setPlayUrl(e.target.value)} value={playUrl} className="form-control"></input>
+                <input type="text" onChange={e=>setPlayUrl(e.target.value)} value={playUrl} className="form-control" required></input>
               </div>
             </div>
             <div className={styles.formBox1}>
               <div className="mb-3">
                 <label className="form-label text-light">Cover Image</label>
-                <input className="form-control" onChange={e=>setFile(e.target.files[0])} type="file" name="file" />
+                <input className="form-control" onChange={e=>setFile(e.target.files[0])} type="file" name="file" required></input>
               </div>
               <div className="mb-3">
                 <label className="form-label text-light">Cover Name</label>
-                <input type="text" onChange={e=>setCoverName(e.target.value)} value={coverName} className="form-control"></input>
+                <input type="text" onChange={e=>setCoverName(e.target.value)} value={coverName} className="form-control" required></input>
               </div>
               <div className="mb-3">
                 <label className="form-label text-light">Cover Job</label>
-                <input type="text" onChange={e=>setCoverJob(e.target.value)} value={coverJob} className="form-control"></input>
+                <input type="text" onChange={e=>setCoverJob(e.target.value)} value={coverJob} className="form-control" required></input>
               </div>
               <div className="mb-3">
                 <label className="form-label text-light">Cover Text</label>
-                <input type="text" onChange={e=>setCoverText(e.target.value)} value={coverText} className="form-control"></input>
+                <input type="text" onChange={e=>setCoverText(e.target.value)} value={coverText} className="form-control" required></input>
               </div>
               <div className="mb-3">
-                <button type="submit" className="btn btn-outline-light btn-sm w-100">Update</button>
+                <button type="submit" className="btn btn-outline-light btn-sm w-100" required>Update</button>
               </div>
             </div>
             

@@ -1,10 +1,13 @@
 <?php
 
+use App\Http\Controllers\MembersController;
 use App\Http\Controllers\PostsController;
+use App\Http\Controllers\SawController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use  App\Http\Controllers\UsersController;
 use App\Http\Controllers\CoverPageController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -37,3 +40,11 @@ Route::post("/post", [PostsController::class, "getpost"]);
 Route::get("/coverpage", [CoverPageController::class, "get"]);
 Route::post("/updatecover", [CoverPageController::class, "update"]);
 
+//MembersController
+Route::get("members", [MembersController::class, "index"]);
+Route::post("createmember", [MembersController::class, "insert"]);
+Route::post("deletemember", [MembersController::class, "delete"]);
+
+//SawController
+Route::get("saw", [SawController::class, "index"]);
+Route::post("updatesaw", [SawController::class, "update"]);

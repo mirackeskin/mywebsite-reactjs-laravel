@@ -31,7 +31,7 @@ const UserSettings = () => {
     formData.append("email",email);
     formData.append("password",password);
     axios.post(`${API_URL}/updateuser`,formData)
-    .then(response=>Navigation("/dashboard/home"))
+    .then(response=>Navigation("/dashboard"))
   }
   return (
     <div className={styles.mainWrapper}>
@@ -40,18 +40,18 @@ const UserSettings = () => {
           <h1 className='text-light'>User Settings</h1>
         </div>
         <div className='card-body'>
-          <form onSubmit={handleSubmit} encType='multipart/form-data'>
+          <form onSubmit={handleSubmit}>
             <div className="mb-3">
               <label className="form-label text-light">User Name</label>
-              <input type="text" onChange={(e)=>setUserName(e.target.value)} value={userName} className="form-control"></input>
+              <input type="text" onChange={(e)=>setUserName(e.target.value)} value={userName} className="form-control" required></input>
             </div>
             <div className="mb-3">
               <label className="form-label text-light">E-mail Adress</label>
-              <input className="form-control" type="email" onChange={(e)=>setEmail(e.target.value)} value={email}></input>
+              <input className="form-control" type="email" onChange={(e)=>setEmail(e.target.value)} value={email} required></input>
             </div>
             <div className="mb-3">
               <label className="form-label text-light">Post Content</label>
-              <input className="form-control" type="password" onChange={(e)=>setPassword(e.target.value)} value={password}></input>
+              <input className="form-control" type="password" onChange={(e)=>setPassword(e.target.value)} value={password} required></input>
             </div>
             <button type="submit" className="btn btn-outline-light btn-sm">Update</button>
           </form>
