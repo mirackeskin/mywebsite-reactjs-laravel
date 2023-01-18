@@ -50,7 +50,7 @@ const Cover = () => {
       headers:{"content-type":"multipart/form-data"}
     }
     axios.post(`${API_URL}/updatecover`,formData,config)
-    .then(response=>Navigation("/dashboard/home"))
+    .then(response=>Navigation("/dashboard"))
     .catch((err)=>alert(err))
   }
   return (

@@ -15,6 +15,7 @@ import UserSettings from "../pages/dashboard/usersettings/UserSettings"
 import DashboardHome from "../pages/dashboard/home/DashboardHome"
 import Edit from '../pages/dashboard/posts/edit/Edit';
 import Saw from '../pages/dashboard/saw/Saw';
+import Content from '../pages/blog/content/Content';
 
 
 
@@ -24,6 +25,7 @@ const Navigations = () => {
         <Route path="/" element={<MainLayout></MainLayout>}></Route>
         <Route path="/blog" element={<BlogLayout></BlogLayout>}>
           <Route path="/blog" element={<Home></Home>}></Route>
+          <Route path='content' element={<Content></Content>}></Route>
         </Route>
         <Route path="/auth" element={<AuthLayout></AuthLayout>}>
           <Route path="login" element={<Login></Login>}></Route>
